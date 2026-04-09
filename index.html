@@ -51,6 +51,10 @@
           document.getElementById("steps").textContent = data.steps;
         }
       };
+
+      document.body.insertAdjacentHTML("beforeend", '<div id="time"></div>')
+      document.getElementById("time").textContent = 
+      "Last updated @ " + new Date().toLocaleTimeString();
     </script>
   </body>
 </html>

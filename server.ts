@@ -13,6 +13,7 @@ let latestData = {}
 // WebSocket connecttion
 wss.on("connection", (ws: WebSocket) => {
     console.log("Client connected");
+    console.log("Total clients: ", wss.clients.size)
 
     // send data
     ws.send(JSON.stringify(latestData))
